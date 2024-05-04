@@ -3,7 +3,7 @@ const siteMetadata = {
   title: 'S.B blog',
   author: '박경우',
   headerTitle: 'S.B BLOG',
-  description: '움직이는 개발자의 포트폴리오',
+  description: 'Fullstack 같은 개발자의 포트폴리오',
   language: 'ko',
   theme: 'system', // system, dark or light
   siteUrl: 'https://silberbullet.github.io/',
@@ -11,15 +11,9 @@ const siteMetadata = {
   siteLogo: '/static/images/logo.png',
   socialBanner: '/static/images/twitter-card.png',
   mastodon: 'https://mastodon.social/@mastodonuser',
-  email: 'address@yoursite.com',
-  github: 'https://github.com',
-  x: 'https://twitter.com/x',
-  // twitter: 'https://twitter.com/Twitter',
-  facebook: 'https://facebook.com',
-  youtube: 'https://youtube.com',
+  email: 'pkw961028@naver.com',
+  github: 'https://github.com/silberbullet',
   linkedin: 'https://www.linkedin.com',
-  threads: 'https://www.threads.net',
-  instagram: 'https://www.instagram.com',
   locale: 'ko',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
