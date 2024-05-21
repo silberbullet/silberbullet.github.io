@@ -1,8 +1,8 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'S.B blog',
+  title: 'Kevin BLOG',
   author: '박경우',
-  headerTitle: 'S.B BLOG',
+  headerTitle: 'Kevin BLOG',
   description: 'Fullstack 같은 개발자의 포트폴리오',
   language: 'ko',
   theme: 'system', // system, dark or light

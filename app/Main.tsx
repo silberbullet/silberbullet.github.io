@@ -10,9 +10,20 @@ const MAX_DISPLAY = 5
 export default function Home({ posts }) {
   return (
     <>
-      <Introduce />
-      <div>코딩스킬</div>
-      <div>프로젝트 경험</div>
+      <div className="divide-y divide-gray-200 dark:divide-gray-700">
+        <div className="space-y-2 pb-5 pt-4 md:space-y-5 ">
+          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+            About Me
+          </h1>
+        </div>
+
+        <div className="py-5">
+          <Introduce />
+          <div>코딩스킬</div>
+          <div>프로젝트 경험</div>
+        </div>
+      </div>
+
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pb-8 pt-6 md:space-y-5">
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
