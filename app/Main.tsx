@@ -1,4 +1,4 @@
-import Introduce from '@/components/Introduce'
+import AboutMe from '@/components/AboutMe'
 import Link from '@/components/Link'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
@@ -18,9 +18,7 @@ export default function Home({ posts }) {
         </div>
 
         <div className="py-5">
-          <Introduce />
-          <div>코딩스킬</div>
-          <div>프로젝트 경험</div>
+          <AboutMe />
         </div>
       </div>
 
