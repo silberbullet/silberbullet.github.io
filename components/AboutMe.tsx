@@ -1,41 +1,35 @@
 'use client'
 
-import Slider, { Settings } from 'react-slick'
-import 'slick-carousel/slick/slick-theme.css'
-import 'slick-carousel/slick/slick.css'
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react'
+
+// Import Swiper styles
+import 'swiper/css'
+import 'swiper/css/pagination'
+import { Pagination } from 'swiper/modules'
 
 const AboutMe = () => {
-  const settings: Settings = {
-    dots: true,
-    vertical: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  }
   return (
-    <div className="min-h-80 w-full rounded-3xl border-2 border-solid border-gray-300 p-5 text-white">
-      <Slider {...settings}>
-        <div className="m-2 flex h-48 items-center justify-center rounded-md bg-gray-800 ">
-          <h3>1</h3>
-        </div>
-        <div className="m-2 flex h-48 items-center justify-center rounded-md bg-gray-800 ">
-          <h3>2</h3>
-        </div>
-        <div className="m-2 flex h-48 items-center justify-center rounded-md bg-gray-800 ">
-          <h3>3</h3>
-        </div>
-        <div className="m-2 flex h-48 items-center justify-center rounded-md bg-gray-800 ">
-          <h3>4</h3>
-        </div>
-        <div className="m-2 flex h-48 items-center justify-center rounded-md bg-gray-800 ">
-          <h3>5</h3>
-        </div>
-        <div className="m-2 flex h-48 items-center justify-center rounded-md bg-gray-800">
-          <h3>6</h3>
-        </div>
-      </Slider>
-    </div>
+    <>
+      <Swiper
+        direction={'vertical'}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Pagination]}
+        className="mySwiper"
+      >
+        <SwiperSlide>Slide 1</SwiperSlide>
+        <SwiperSlide>Slide 2</SwiperSlide>
+        <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide>Slide 4</SwiperSlide>
+        <SwiperSlide>Slide 5</SwiperSlide>
+        <SwiperSlide>Slide 6</SwiperSlide>
+        <SwiperSlide>Slide 7</SwiperSlide>
+        <SwiperSlide>Slide 8</SwiperSlide>
+        <SwiperSlide>Slide 9</SwiperSlide>
+      </Swiper>
+    </>
   )
 }
 

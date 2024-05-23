@@ -5,7 +5,7 @@ const siteMetadata = {
   headerTitle: 'Kevin BLOG',
   description: 'Fullstack 같은 개발자의 포트폴리오',
   language: 'ko',
-  theme: 'system', // system, dark or light
+  theme: 'light', // system, dark or light
   siteUrl: 'https://silberbullet.github.io/',
   siteRepo: 'https://silberbullet.github.io/',
   siteLogo: '/static/images/logo.png',
