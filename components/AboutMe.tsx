@@ -23,14 +23,14 @@ const AboutMe = () => {
         <SwiperSlide>
           <Introduce />
         </SwiperSlide>
-        <SwiperSlide></SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        <SwiperSlide className="container"></SwiperSlide>
+        <SwiperSlide className="container">Slide 3</SwiperSlide>
+        <SwiperSlide className="container">Slide 4</SwiperSlide>
+        <SwiperSlide className="container">Slide 5</SwiperSlide>
+        <SwiperSlide className="container">Slide 6</SwiperSlide>
+        <SwiperSlide className="container">Slide 7</SwiperSlide>
+        <SwiperSlide className="container">Slide 8</SwiperSlide>
+        <SwiperSlide className="container">Slide 9</SwiperSlide>
       </Swiper>
     </>
   )
