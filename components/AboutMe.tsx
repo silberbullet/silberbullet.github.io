@@ -2,7 +2,7 @@
 
 import 'swiper/css'
 import 'swiper/css/pagination'
-import { Pagination } from 'swiper/modules'
+import { Mousewheel, Pagination, Scrollbar } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import Introduce from './Introduce'
 
@@ -11,16 +11,19 @@ const AboutMe = () => {
     <>
       <Swiper
         direction={'vertical'}
+        slidesPerView={1}
+        spaceBetween={30}
+        mousewheel={true}
         pagination={{
           clickable: true,
         }}
-        modules={[Pagination]}
-        className="mySwiper"
+        modules={[Pagination, Mousewheel, Scrollbar]}
+        className="AboutMe"
       >
         <SwiperSlide>
           <Introduce />
         </SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
+        <SwiperSlide></SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
         <SwiperSlide>Slide 4</SwiperSlide>
         <SwiperSlide>Slide 5</SwiperSlide>
