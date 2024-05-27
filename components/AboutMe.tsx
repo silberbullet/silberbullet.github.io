@@ -20,7 +20,7 @@ const AboutMe = () => {
         modules={[Pagination, Mousewheel, Scrollbar]}
         className="AboutMe"
       >
-        <SwiperSlide>
+        <SwiperSlide className="container">
           <Introduce />
         </SwiperSlide>
         <SwiperSlide className="container"></SwiperSlide>
