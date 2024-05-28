@@ -96,7 +96,7 @@ input:-webkit-autofill:focus {
   align-items: center;
   justify-content: center;
   text-align: left;
-  background: linear-gradient(135deg, #414af2, #3949ab);
+  background: linear-gradient(135deg, #414af2, #264653);
   color: white;
 }
 
@@ -187,6 +187,7 @@ input:-webkit-autofill:focus {
     width: 100%;
     font-size: 1.6em;
     line-height: 1.2;
+    font-weight: bold;
   }
 
   .subtitle {
@@ -207,7 +208,7 @@ input:-webkit-autofill:focus {
     }
 
     p {
-      font-size: 0.7rem;
+      font-size: 0.8rem;
       margin-bottom: 1rem;
     }
   }
@@ -231,15 +232,22 @@ input:-webkit-autofill:focus {
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    margin-top: auto;
   }
 
   .title {
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
     display: flex;
+    width: auto;
     max-width: 100%;
     flex-direction: row;
-    border: none;
+    justify-content: flex-start;
+    align-items: center;
   }
   .mobilTitle {
+    width: 100%;
     margin-right: 1rem;
   }
 
@@ -253,15 +261,20 @@ input:-webkit-autofill:focus {
   }
 
   .content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-top: solid 2px white;
     max-width: 100%;
     margin: 1rem;
   }
 
   .mobileImage {
     margin: 1rem 0;
+    display: contents;
+    float: right;
 
     img {
-      width: 5rem;
+      width: 6rem;
       height: auto;
     }
   }

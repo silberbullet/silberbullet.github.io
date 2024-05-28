@@ -86,53 +86,6 @@ const siteMetadata = {
     //   indexName: 'docsearch',
     // },
   },
-  aboutMe: {
-    name: 'BE 경우 (Kevin)',
-    intro1: '반가워요~👋',
-    intro2: '차별화된 금융 서비스를 세상 밖에 내보내고 싶은 개발자 입니다. 🔥',
-    skillStack: {
-      Java: {
-        imgsrc: '',
-        level: '2',
-      },
-      OrcleSQL: {
-        imgsrc: '',
-        level: '2',
-      },
-      SpringBoot: {
-        imgsrc: '',
-        level: '2',
-      },
-      Redis: {
-        imgsrc: '',
-        level: '1',
-      },
-      Kafka: {
-        imgsrc: '',
-        level: '2',
-      },
-      Docker: {
-        imgsrc: '',
-        level: '1',
-      },
-      JS: {
-        imgsrc: '',
-        level: '2',
-      },
-      TS: {
-        imgsrc: '',
-        level: '2',
-      },
-      Vue: {
-        imgsrc: '',
-        level: '2',
-      },
-      React: {
-        imgsrc: '',
-        level: '2',
-      },
-    },
-  },
 }
 
 module.exports = siteMetadata

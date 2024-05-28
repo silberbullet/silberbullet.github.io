@@ -1,6 +1,7 @@
-import AboutMe from '@/components/AboutMe'
 import Link from '@/components/Link'
 import Tag from '@/components/Tag'
+import AboutMe from '@/components/aboutMe/AboutMe'
+import aboutMedata from '@/data/aboutMe/aboutMedata'
 import siteMetadata from '@/data/siteMetadata'
 import NewsletterForm from 'pliny/ui/NewsletterForm'
 import { formatDate } from 'pliny/utils/formatDate'
@@ -18,7 +19,7 @@ export default function Home({ posts }) {
         </div>
 
         <div className="py-5">
-          <AboutMe />
+          <AboutMe aboutMeData={aboutMedata} />
         </div>
       </div>
 
