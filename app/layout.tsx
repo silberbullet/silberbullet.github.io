@@ -60,7 +60,13 @@ export const metadata: Metadata = {
   },
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+  modal,
+}: {
+  children: React.ReactNode
+  modal: React.ReactNode
+}) {
   return (
     <html
       lang={siteMetadata.language}
@@ -83,7 +89,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div className="flex h-screen flex-col justify-between font-sans">
               <SearchProvider searchConfig={siteMetadata.search as SearchConfig}>
                 <Header />
-                <main className="mb-auto">{children}</main>
+                <main className="mb-auto">
+                  {children}
+                  {modal}
+                </main>
               </SearchProvider>
               <Footer />
             </div>
