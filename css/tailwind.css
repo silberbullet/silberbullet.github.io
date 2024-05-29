@@ -106,7 +106,7 @@ input:-webkit-autofill:focus {
   justify-content: space-between;
   width: 100%;
   max-width: 1200px;
-  margin: 3rem auto 0;
+  margin: 0 auto 0;
 }
 
 .title {
@@ -152,19 +152,16 @@ input:-webkit-autofill:focus {
 }
 
 .image img {
-  margin-top: 2rem;
   width: 15rem;
   height: auto;
   border-radius: 50%;
 }
 
 .scroll-indicator {
-  position: absolute;
-  bottom: 5px;
   left: 50%;
-  transform: translateX(-50%);
   color: white;
-  font-size: 2em;
+  font-size: 1.2em;
+  margin-bottom: 1rem;
 }
 
 .mobileImage {
@@ -176,7 +173,7 @@ input:-webkit-autofill:focus {
   .title {
     flex: 1;
     margin-left: 4rem;
-    margin-top: 4rem;
+    /* margin-top: 4rem; */
     border-right-width: 2px;
     border-right-color: #fff;
     max-width: 25%;
@@ -199,7 +196,7 @@ input:-webkit-autofill:focus {
     flex: 1;
     text-align: left;
     margin: 0 2rem;
-    margin-top: 4rem;
+    /* margin-top: 4rem; */
 
     h3 {
       margin-top: 1rem;
@@ -214,7 +211,7 @@ input:-webkit-autofill:focus {
   }
 
   .image img {
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     width: 12rem;
     height: auto;
     border-radius: 50%;
@@ -236,6 +233,7 @@ input:-webkit-autofill:focus {
   }
 
   .title {
+    margin-top: 2rem;
     margin-left: auto;
     margin-right: auto;
     border: none;
@@ -285,6 +283,7 @@ input:-webkit-autofill:focus {
   }
 
   .scroll-indicator {
-    font-size: 1.5em;
+    font-size: 1em;
+    margin-bottom: 1rem;
   }
 }

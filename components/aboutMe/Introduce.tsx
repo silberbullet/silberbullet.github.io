@@ -38,7 +38,7 @@ const Introduce = ({ introduce }) => {
       </div>
 
       <div className="scroll-indicator">
-        <p>&#8595;</p>
+        <p>Click Me!</p>
       </div>
     </>
   )
