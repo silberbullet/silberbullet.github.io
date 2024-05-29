@@ -4,7 +4,6 @@ import 'css/tailwind.css'
 
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
-import PageScrollProgress from '@/components/PageScrollProgress'
 import SectionContainer from '@/components/SectionContainer'
 import siteMetadata from '@/data/siteMetadata'
 import { Metadata } from 'next'
@@ -12,6 +11,7 @@ import { Space_Grotesk } from 'next/font/google'
 import { Analytics, AnalyticsConfig } from 'pliny/analytics'
 import { SearchConfig, SearchProvider } from 'pliny/search'
 
+import React from 'react'
 import { ThemeProviders } from './theme-providers'
 
 const space_grotesk = Space_Grotesk({
@@ -81,7 +81,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Analytics analyticsConfig={siteMetadata.analytics as AnalyticsConfig} />
           <SectionContainer>
             <div className="flex h-screen flex-col justify-between font-sans">
-              <PageScrollProgress />
               <SearchProvider searchConfig={siteMetadata.search as SearchConfig}>
                 <Header />
                 <main className="mb-auto">{children}</main>

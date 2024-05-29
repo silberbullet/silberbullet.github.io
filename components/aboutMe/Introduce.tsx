@@ -1,3 +1,4 @@
+'use client'
 interface Content {
   title: string
   description: string
@@ -26,10 +27,10 @@ const Introduce = ({ introduce }) => {
 
         <div className="content">
           {introduce.contents.map((content: Content) => (
-            <>
-              <h3 key={content.title}>{content.title}</h3>
+            <div key={content.title}>
+              <h3>{content.title}</h3>
               <p key={content.description}>{content.description}</p>
-            </>
+            </div>
           ))}
         </div>
         <div className="image">
@@ -38,7 +39,7 @@ const Introduce = ({ introduce }) => {
       </div>
 
       <div className="scroll-indicator">
-        <p>Click Me!</p>
+        <p>Click and See More!</p>
       </div>
     </>
   )
