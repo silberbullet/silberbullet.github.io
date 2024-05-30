@@ -1,4 +1,5 @@
 'use client'
+import Image from '../Image'
 interface Content {
   title: string
   description: string
@@ -17,7 +18,7 @@ const Introduce = ({ introduce }) => {
             ))}
           </div>
           <div className="mobileImage">
-            <img src={introduce.memoticon.mobile} alt="Profile" />
+            <Image src={introduce.memoticon.mobile} alt="Profile" width={192} height={192} />
           </div>
 
           <div className="subtitle">
@@ -34,7 +35,7 @@ const Introduce = ({ introduce }) => {
           ))}
         </div>
         <div className="image">
-          <img src={introduce.memoticon.default} alt="Profile" />
+          <Image src={introduce.memoticon.default} alt="Profile" width={192} height={192} />
         </div>
       </div>
 

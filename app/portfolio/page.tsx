@@ -1,7 +1,18 @@
+import Introduce from '@/components/aboutMe/Introduce'
+import portfolioData from '@/data/portfolio/portfolioData'
+import PortfolioLayout from '@/layouts/PortfolioLayout'
+import { genPageMetadata } from 'app/seo'
+export const metadata = genPageMetadata({ title: 'Portfolio' })
+
 export default function Page() {
   return (
-    <div className="container mx-auto my-8">
-      <h2 className="text-center text-4xl font-bold">New Todo!</h2>
-    </div>
+    <PortfolioLayout>
+      <Introduce introduce={portfolioData.introduce} />
+      <Introduce introduce={portfolioData.introduce} />
+      <Introduce introduce={portfolioData.introduce} />
+      <Introduce introduce={portfolioData.introduce} />
+      <Introduce introduce={portfolioData.introduce} />
+      <Introduce introduce={portfolioData.introduce} />
+    </PortfolioLayout>
   )
 }

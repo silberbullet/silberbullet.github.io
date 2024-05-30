@@ -1,34 +1,45 @@
 'use client'
 
-import { useRouter } from 'next/navigation'
-import React from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
+import React, { useEffect, useRef } from 'react'
+import { createPortal } from 'react-dom'
 
 export interface ModalProps {
   children: React.ReactNode
+  isOpen: boolean
+  setIsOpen: (isOpen: boolean) => void
 }
 
-const Modal = ({ children }: ModalProps) => {
-  const router = useRouter()
-  const overlayRef = React.useRef(null)
+const Modal = ({ children, isOpen, setIsOpen }: ModalProps) => {
+  const overlayRef = useRef<HTMLDivElement>(null)
 
   const handleKeyUp = (e: KeyboardEvent) => {
-    if (e.key !== 'Escape') return
-
-    router.back()
+    if (e.key === 'Escape') {
+      setIsOpen(false)
+    }
   }
 
-  React.useEffect(() => {
-    window.addEventListener('keyup', handleKeyUp)
+  useEffect(() => {
+    if (isOpen) {
+      window.addEventListener('keyup', handleKeyUp)
+    } else {
+      window.removeEventListener('keyup', handleKeyUp)
+    }
 
-    return () => window.removeEventListener('keyup', handleKeyUp)
-  }, [])
+    return () => {
+      window.removeEventListener('keyup', handleKeyUp)
+    }
+  }, [isOpen])
 
   const handleClose = () => {
-    router.back()
+    setIsOpen(false)
   }
 
-  return (
+  if (!isOpen) {
+    return null
+  }
+
+  return createPortal(
     <AnimatePresence>
       <motion.div
         ref={overlayRef}
@@ -57,7 +68,8 @@ const Modal = ({ children }: ModalProps) => {
           {children}
         </motion.div>
       </motion.div>
-    </AnimatePresence>
+    </AnimatePresence>,
+    document.getElementById('modal-root')!
   )
 }
 
