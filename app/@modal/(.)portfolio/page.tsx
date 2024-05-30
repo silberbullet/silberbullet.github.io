@@ -1,6 +1,5 @@
-'use client'
+import { Modal } from './modal'
 
-import Modal from '@/components/Modal'
 export default function Page() {
   return (
     <Modal>

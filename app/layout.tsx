@@ -92,6 +92,7 @@ export default function RootLayout({
                 <main className="mb-auto">
                   {children}
                   {modal}
+                  <div id="modal-root" />
                 </main>
               </SearchProvider>
               <Footer />
