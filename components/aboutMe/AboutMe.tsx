@@ -9,7 +9,8 @@ const AboutMe = ({ aboutMeData }) => {
     <>
       <motion.div whileHover={{ scale: [null, 1.2, 1.1] }} transition={{ duration: 0.2 }}>
         <Link
-          href={`/portfolio`}
+          href="/portfolio"
+          prefetch={true}
           className="border-1 container flex w-full flex-wrap rounded-xl border-solid border-[#414af2]"
         >
           <Introduce introduce={aboutMeData.introduce} />
