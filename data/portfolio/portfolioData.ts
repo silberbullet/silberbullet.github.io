@@ -1,4 +1,34 @@
 const portfolio = {
+  example: '안녕하세요 백엔드 개발자 박경우입니다. ',
+  intro: {
+    title: ['안녕하세요', '백엔드 개발자', '박경우입니다.'],
+    subtitle:
+      '방향성 없는 개발 보단 한 도메인에 전문적인 백엔드 개발자가 되고 싶어 열심히 공부 중 입니다.',
+    memoticon: {
+      default: 'static/images/profile.png',
+    },
+    contents: [
+      {
+        title: '✈️차별화된 서비스 제공을 위한 성장을 추구합니다.',
+        description: '- Tech 컨텐츠를 참고하여 기술 블로그의 10+ 포스팅을 하였습니다.',
+      },
+      {
+        title: '🔥사용자 경험을 중요하게 생각합니다.',
+        description: '- 수기 업무 자동화 서비스 개편을 통한 고객 만족도 효율성을 향상 시켰습니다.',
+      },
+    ],
+    contact: {
+      email: 'pkw961028@naver.com',
+      github: 'https://silberbullet.github.io/',
+    },
+  },
+  experience: [
+    {
+      date: '2022.05 - 재직중',
+      company: '(주)텐노드솔루션',
+      employmentType: '정규직',
+    },
+  ],
   introduce: {
     title: ['안녕하세요', '백엔드 개발자', '박경우입니다.'],
     subtitle: '방문해 주셔서 감사합니다.',
