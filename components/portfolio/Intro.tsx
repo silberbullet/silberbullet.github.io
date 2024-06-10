@@ -1,19 +1,24 @@
 import Image from 'next/image'
 
-const Intro = () => {
+const Intro = ({ intro }) => {
   return (
-    <div className="x-full h-auto">
-      <div className="flex flex-wrap">
-        <div className="relative my-4 h-auto w-auto min-w-52 md:h-40">
+    <div className="h-auto w-full">
+      <div className="flex flex-wrap md:flex-nowrap">
+        <div className="relative my-4 h-32 w-1/2 md:h-40 md:w-1/2">
           <Image
-            src="static/images/profile.png"
+            src={intro.memoticon.default}
             alt="profile"
+            sizes="50vw"
             priority={true}
-            layout="fill"
-            objectFit="contain"
+            fill
+            style={{ objectFit: 'contain' }}
           />
         </div>
-        <div>소개글</div>
+        <div className="my-4 mt-6 flex flex-col text-left">
+          {intro.title.map((t: string) => (
+            <h1 key={t}>{t}</h1>
+          ))}
+        </div>
       </div>
     </div>
   )

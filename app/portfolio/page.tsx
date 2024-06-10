@@ -8,7 +8,7 @@ export const metadata = genPageMetadata({ title: 'Portfolio' })
 export default function Page() {
   return (
     <PortfolioLayout>
-      <Intro />
+      <Intro intro={portfolioData.intro} />
       <Introduce introduce={portfolioData.introduce} />
       <Introduce introduce={portfolioData.introduce} />
       <Introduce introduce={portfolioData.introduce} />
